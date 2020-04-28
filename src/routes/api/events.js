@@ -82,9 +82,10 @@ server.route({
 
                 if(res.recordset.length ===0)
                     {
-                        return {
+                        return [{
+                            "userid":0,
                             "username":"nouser"
-                        };
+                        }];
                     }
                 else
                     return res.recordset;
