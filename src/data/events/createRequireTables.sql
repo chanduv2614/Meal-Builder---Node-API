@@ -7,6 +7,7 @@ IF (not EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES
     itemname varchar(255) NOT NULL,
     itemprice money,
     itemImage varchar(max),
+	Category varchar(255),
     );
    END;
 
